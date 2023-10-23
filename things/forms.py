@@ -10,8 +10,8 @@ class ThingForm(forms.Form):
         # fields = ['name', 'description', 'quantity']
         # widgets = {'description':forms.Textarea()}
         #quantity = forms.NumberInput()
-    first_name = forms.CharField(label='First name', max_length=50)
-    description = forms.CharField(label='description',max_length=520)
+    first_name = forms.CharField(label='name')
+    description = forms.CharField(label='description')
     quantity = forms.NumberInput(label='quantity')
 
 
