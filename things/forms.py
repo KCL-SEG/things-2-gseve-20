@@ -5,11 +5,14 @@ from django.db import models
 
 # Create your forms here.
 class ThingForm(forms.Form):
-    class meta: 
-        model = Thing
-        fields = ['name', 'description', 'quantity']
-        widgets = {'description':forms.Textarea()}
+    #class meta: 
+        # model = Thing
+        # fields = ['name', 'description', 'quantity']
+        # widgets = {'description':forms.Textarea()}
         #quantity = forms.NumberInput()
+    first_name = forms.CharField(label='First name', max_length=50)
+    description = forms.CharField(label='description',max_length=520)
+    quantity = forms.NumberInput(label='quantity')
 
 
     
